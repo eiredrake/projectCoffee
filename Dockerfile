@@ -1,4 +1,4 @@
-FROM python:3.10.5
+FROM alexberkovich/alpine-anaconda3:latest
 
 RUN echo '===============WEBSITE START==============='
 

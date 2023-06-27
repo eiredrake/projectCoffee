@@ -25,7 +25,7 @@ services:
 #    << : *restart_policy
     container_name: project_coffee_web
     build:
-      dockerfile: web_Dockerfile
+      dockerfile: Dockerfile
     command: gunicorn projectCoffee.wsgi:application --bind 0.0.0.0:8000
     volumes:
       - static_volume:/usr/src/app/staticfiles
